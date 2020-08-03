@@ -20,6 +20,7 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.20.5",
     "husky": "^4.2.5",
@@ -30,6 +31,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:ci": "cross-env CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint ./**/*{.js,.jsx}",
     "prettier": "prettier --write .",
