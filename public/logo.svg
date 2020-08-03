@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (6e3e5246a0, 2020-05-07)"
+   sodipodi:docname="logo.svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 51.373486 51.373486"
+   height="51.373486mm"
+   width="51.373486mm">
+  <defs
+     id="defs2">
+    <rect
+       id="rect855"
+       height="62.736301"
+       width="118.00698"
+       y="58.309872"
+       x="20.329237" />
+    <rect
+       id="rect849"
+       height="21.302156"
+       width="51.344929"
+       y="73.649254"
+       x="44.834484" />
+  </defs>
+  <sodipodi:namedview
+     units="in"
+     inkscape:window-maximized="1"
+     inkscape:window-y="27"
+     inkscape:window-x="67"
+     inkscape:window-height="1025"
+     inkscape:window-width="1853"
+     fit-margin-bottom="1"
+     fit-margin-right="1"
+     fit-margin-left="1"
+     fit-margin-top="1"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="146.99704"
+     inkscape:cx="-9.8694804"
+     inkscape:zoom="1.4"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-75.986534,-68.278131)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <text
+       transform="translate(-21.635561,-19.876936)"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect849);fill:#000000;fill-opacity:1;stroke:none;"
+       id="text847"
+       xml:space="preserve"><tspan
+         style="visibility:hidden"
+         x="44.833984"
+         y="114.92723"><tspan
+           dx="0 16.580572 16.536474"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">CPF</tspan></tspan></text>
+    <g
+       inkscape:export-ydpi="98.773666"
+       inkscape:export-xdpi="98.773666"
+       transform="translate(14.553779,-33.786017)"
+       id="g880">
+      <rect
+         style="fill:#2c51d4;fill-opacity:1;stroke:none;stroke-width:0.820211;stroke-linecap:round"
+         id="rect859"
+         width="49.373486"
+         height="49.373486"
+         x="62.432755"
+         y="103.06415" />
+      <text
+         xml:space="preserve"
+         id="text853"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect855);fill:#000000;fill-opacity:1;stroke:none;"
+         transform="matrix(1.2271821,0,0,1.5116305,40.285709,27.032773)"><tspan
+           x="20.330078"
+           y="73.292549"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.9333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;fill-opacity:1">CPF</tspan></tspan></text>
+    </g>
+  </g>
+</svg>

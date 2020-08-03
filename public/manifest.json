@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Gerador CPF",
+  "name": "Gerador de CPF",
   "icons": [
     {
       "src": "favicon.ico",
