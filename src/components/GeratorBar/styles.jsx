@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const CpfGeneratorBarContainer = styled.div`
+export const GeneratorBarContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -4,7 +4,8 @@
   --primary-border: #a2e2ff;
   --text: #424242;
   --button: #0091d4;
-  --cpf-display-hover: #a2e2ff;
+  --display: #a2e2ff50;
+  --display-hover: #f2f27050;
   --display-bar-shadow: rgba(220, 233, 255, 0.48);
 }
 
