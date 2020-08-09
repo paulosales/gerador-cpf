@@ -5,6 +5,7 @@ import { AppContainer } from './styles'
 function App() {
   return (
     <AppContainer>
+      <h1>Gerador de CPF</h1>
       <GeratorBar />
     </AppContainer>
   )
