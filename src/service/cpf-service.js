@@ -1,3 +1,6 @@
+import debugFactory from 'debug'
+const debug = debugFactory('cpf-service')
+
 export const TAX_ZONES = {
   ZONE_1: 1, //DF, GO, MT, MS, and TO
   ZONE_2: 2, //AC, AP, AM, PA, RO, and RR
@@ -22,21 +25,48 @@ export const formatCpf = (cpf) => {
 }
 
 export const generateCpf = (fiscalZone = TAX_ZONES.ANY) => {
+  debug(`Generating CPF for fiscal zone ${fiscalZone}`)
+  const weights = [10, 9, 8, 7, 6, 5, 4, 3, 2]
   const cpfNumbers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  let firstCheckSum = 0
+  let secondCheckSum = 0
+
   for (let i = 0; i < 8; i++) {
     cpfNumbers[i] = Math.round(Math.random() * 9)
-    cpfNumbers[9] = cpfNumbers[9] + cpfNumbers[i] * (9 - ((i + 1) % 10))
-    cpfNumbers[10] = cpfNumbers[10] + cpfNumbers[i] * (9 - (i % 10))
+    firstCheckSum += cpfNumbers[i] * weights[i]
+    secondCheckSum += cpfNumbers[i] * (weights[i] + 1)
   }
-  cpfNumbers[9] = cpfNumbers[9] + cpfNumbers[10] * 9
-  cpfNumbers[9] = (cpfNumbers[9] % 11) % 10
-  cpfNumbers[10] = (cpfNumbers[10] % 11) % 10
-
   if (fiscalZone === TAX_ZONES.ANY) {
     cpfNumbers[8] = Math.round(Math.random() * 9)
   } else {
     cpfNumbers[8] = fiscalZone
   }
+  debug(`CPF without checksum ${cpfNumbers}.`)
+
+  firstCheckSum += cpfNumbers[8] * weights[8]
+  secondCheckSum += cpfNumbers[8] * (weights[8] + 1)
+  debug(`sum of the products for first checksum ${firstCheckSum}.`)
+
+  firstCheckSum = firstCheckSum % 11
+  if (firstCheckSum === 0 || firstCheckSum === 1) {
+    firstCheckSum = 0
+  } else {
+    firstCheckSum = 11 - firstCheckSum
+  }
+  cpfNumbers[9] = firstCheckSum
+  debug(`CPF with first checksum ${cpfNumbers}.`)
+
+  secondCheckSum += firstCheckSum * 2
+  debug(`sum of the products for second checksum ${secondCheckSum}.`)
+
+  secondCheckSum = secondCheckSum % 11
+  if (secondCheckSum === 0 || secondCheckSum === 1) {
+    secondCheckSum = 0
+  } else {
+    secondCheckSum = 11 - secondCheckSum
+  }
+  cpfNumbers[10] = secondCheckSum
+  debug(`CPF with two checksums ${cpfNumbers}.`)
 
   return cpfNumbers.join('')
 }
