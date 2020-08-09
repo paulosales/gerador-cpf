@@ -9,9 +9,20 @@ const GeneratorBar = () => {
 
   return (
     <GeneratorBarContainer>
-      <Display formated={true} cpf={cpf} label="CPF formatado" />
-      <Display formated={false} cpf={cpf} label="CPF não formatado" />
+      <Display
+        formated={true}
+        cpf={cpf}
+        label="CPF formatado"
+        shortCut="alt+c"
+      />
+      <Display
+        formated={false}
+        cpf={cpf}
+        label="CPF não formatado"
+        shortCut="ctrl+c"
+      />
       <Button
+        shortCut="g"
         onClick={() => {
           setCpf(generateCpf())
         }}
